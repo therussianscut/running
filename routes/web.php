@@ -31,3 +31,7 @@ Route::get('/first-greeting', function () {
     return greeting::first()->body;
 
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
