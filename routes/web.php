@@ -13,9 +13,9 @@ use App\greeting;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'welcomeController@index');
+
+
 
 
 Route::get('/create-greeting', function () {
@@ -35,3 +35,5 @@ Route::get('/first-greeting', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('/posts', 'welcomeController');
