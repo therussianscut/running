@@ -13,7 +13,9 @@ class tasksController extends Controller
      */
     public function index()
     {
-        //
+
+        return('hello, world');
+
     }
 
     /**
